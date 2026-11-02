@@ -11,6 +11,8 @@
     <Project Path="Contoso.XPlatform.Flow/Contoso.XPlatform.Flow.csproj" />
   </Folder>
   <Folder Name="/_Solution Items/">
+    <File Path=".github/workflows/ci.yml" />
+    <File Path=".github/workflows/release.yml" />
     <File Path="CHANGELOG.md" />
     <File Path="CodeCoverage.runsettings" />
     <File Path="global.json" />
