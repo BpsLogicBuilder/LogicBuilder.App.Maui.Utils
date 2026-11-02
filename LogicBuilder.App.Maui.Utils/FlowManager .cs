@@ -19,7 +19,7 @@ namespace LogicBuilder.App.Maui.Utils
     {
         public FlowManager(IScreenData screenData,
             IAppLogger appLogger,
-            FlowDataCache flowDataCache,
+            IFlowDataCache flowDataCache,
             IFlowFactory flowFactory,
             Progress progress,
             IRulesCache rulesCache,

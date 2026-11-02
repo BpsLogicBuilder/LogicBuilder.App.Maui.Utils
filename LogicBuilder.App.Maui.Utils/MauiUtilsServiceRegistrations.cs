@@ -3,10 +3,6 @@ using LogicBuilder.App.Maui.Business.Cache.Interfaces;
 using LogicBuilder.App.Maui.Utils;
 using LogicBuilder.App.Maui.Utils.Interfaces;
 using LogicBuilder.RulesDirector;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 #pragma warning disable IDE0130 // Microsoft recommended namespace for service registrations
 namespace Microsoft.Extensions.DependencyInjection
@@ -16,13 +12,11 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddMauiUtilsServices(this IServiceCollection services)
             => services
-                .AddScoped<IFlowManager, FlowManager>()
-                .AddScoped<FlowDataCache>()
+                .AddTransient<IFlowManager, FlowManager>()
                 .AddScoped<IFlowDataCache, FlowDataCache>()
-                .AddScoped<ScreenData>()
                 .AddScoped<IScreenData, ScreenData>()
                 .AddScoped<Progress>()
-                .AddScoped<IDialogFunctions, DialogFunctions>()
-                .AddScoped<IActions, Actions>();
+                .AddTransient<IDialogFunctions, DialogFunctions>()
+                .AddTransient<IActions, Actions>();
     }
 }
