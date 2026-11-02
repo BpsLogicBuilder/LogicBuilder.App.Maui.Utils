@@ -28,6 +28,11 @@
 		<ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
   </PropertyGroup>
 
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+		<None Include="..\icon.png" Pack="true" PackagePath="\" Visible="False" />
+	</ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="LogicBuilder.App.Maui.AutoMapperProfiles" Version="1.0.2" />
     <PackageReference Include="LogicBuilder.App.Maui.Business" Version="1.0.1-alpha.0.1" />
