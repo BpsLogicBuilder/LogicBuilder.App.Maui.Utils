@@ -35,11 +35,11 @@
 
   <ItemGroup>
     <PackageReference Include="LogicBuilder.App.Maui.AutoMapperProfiles" Version="1.0.2" />
-    <PackageReference Include="LogicBuilder.App.Maui.Business" Version="1.0.1-alpha.0.1" />
-		<PackageReference Include="LogicBuilder.App.Utils" Version="1.0.8" />
+    <PackageReference Include="LogicBuilder.App.Maui.Business" Version="1.0.1" />
+		<PackageReference Include="LogicBuilder.App.Utils" Version="1.0.9" />
 		<PackageReference Include="LogicBuilder.RulesDirector" Version="2.0.6" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.12" />
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.401" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.14" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.403" PrivateAssets="All" />
 		<PackageReference Include="MinVer" Version="8.0.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
